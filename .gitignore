@@ -1,0 +1,13 @@
+# Visual Studio Geçici Dosyalar
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build dosyaları
+bin/
+obj/
+
+# Paketler
+*.nupkg
