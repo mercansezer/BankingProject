@@ -1,0 +1,8 @@
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.exe.config
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.exe
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.csproj.AssemblyReference.cache
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe.config
