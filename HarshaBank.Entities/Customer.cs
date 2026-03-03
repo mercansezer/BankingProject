@@ -1,4 +1,6 @@
 ﻿using HarshaBank.Entities.Contracts;
+using HarshaBank.Exceptions;
+
 using System;
 
 namespace HarshaBank.Entities
@@ -32,12 +34,41 @@ namespace HarshaBank.Entities
         /// <summary>
         /// Auto-generated code number of customer
         /// </summary>
-        public long CustomerCode { get => _customerCode; set => _customerCode = value; }
+        public long CustomerCode
+        {
+            get => _customerCode;
+            set
+            {
+                if (value > 0)
+                {
+                    _customerCode = value;
+                }
+                else
+                {
+                    throw new CustomerException("Customer code should be positive only");
+                }
+            }
+        }
 
         /// <summary>
         /// Name of the customer
         /// </summary>
-        public string CustomerName { get => _customerName; set => _customerName = value; }
+        public string CustomerName
+        {
+            get => _customerName;
+            set
+            {
+                if (value.Length <= 40 && string.IsNullOrWhiteSpace(value) == false)
+                {
+                    _customerName = value;
+                }
+                else
+                {
+                    throw new CustomerException("Customer name should not be null and less than 40 characters long.");
+                }
+
+            }
+        }
 
         /// <summary>
         /// Address of the customer
@@ -60,7 +91,13 @@ namespace HarshaBank.Entities
         /// <summary>
         /// 10-digit Mobile of the customer
         /// </summary>
-        public string Mobile { get => _mobile; set => _mobile = value; }
+        public string Mobile
+        {
+            get => _mobile;
+            set
+            {
+            }
+        }
         #endregion
 
     }
