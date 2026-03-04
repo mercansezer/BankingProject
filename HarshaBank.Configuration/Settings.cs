@@ -9,6 +9,6 @@
         /// Represents the starting customer code value.
         /// This value can be incremented when creating new customers.
         /// </summary>
-        public static long CustomerCode { get; set; } = 10000;
+        public static long BaseCustomerCode { get; set; } = 10000;
     }
 }
