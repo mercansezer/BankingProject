@@ -46,7 +46,6 @@ namespace HarshaBank.DataAccessLayer.DALContracts
         /// </summary>
         /// <param name="customer">Customer which we want to udapte</param>
         /// <returns>It returns true or false, it identifies whether the customer is updated or not</returns>
-        bool UpdateCustomer(Customer customer)
-
+        bool UpdateCustomer(Customer customer);
     }
 }

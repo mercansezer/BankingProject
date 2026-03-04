@@ -1,5 +1,6 @@
 ﻿using HarshaBank.DataAccessLayer.DALContracts;
 using HarshaBank.Entities;
+using HarshaBank.Exceptions;
 using System;
 using System.Collections.Generic;
 namespace HarshaBank.DataAccessLayer
@@ -35,11 +36,22 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>It returns customer's id which we added to our List.</returns>
         public Guid AddCustomer(Customer customer)
         {
-            customer.CustomerID = Guid.NewGuid();
+            try
+            {
+                customer.CustomerID = Guid.NewGuid();
 
-            _customerList.Add(customer);
+                _customerList.Add(customer);
 
-            return customer.CustomerID;
+                return customer.CustomerID;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
 
@@ -50,13 +62,26 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>It returns true or false and it identifies if the customer is deleted or not.</returns>
         public bool DeleteCustomer(Guid customerId)
         {
-            if (Customers.RemoveAll(item => item.CustomerID == customerId) > 0)
+            try
             {
-                return true;
+
+
+                if (Customers.RemoveAll(item => item.CustomerID == customerId) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch (CustomerException)
             {
-                return false;
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
 
@@ -67,11 +92,23 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>A list of cloned customer objects.</returns>
         public List<Customer> GetCustomers()
         {
-            List<Customer> customerList = new List<Customer>();
+            try
+            {
+                List<Customer> customerList = new List<Customer>();
 
-            Customers.ForEach(item => customerList.Add(item.Clone() as Customer));
+                Customers.ForEach(item => customerList.Add(item.Clone() as Customer));
 
-            return customerList;
+                return customerList;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
 
@@ -83,13 +120,24 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>A list of cloned customer objects that match the condition.</returns>
         public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
         {
-            List<Customer> filteredCustomer = Customers.FindAll(predicate);
+            try
+            {
+                List<Customer> filteredCustomer = Customers.FindAll(predicate);
 
-            List<Customer> customerList = new List<Customer>();
+                List<Customer> customerList = new List<Customer>();
 
-            filteredCustomer.ForEach(item => customerList.Add(item.Clone() as Customer));
+                filteredCustomer.ForEach(item => customerList.Add(item.Clone() as Customer));
 
-            return customerList;
+                return customerList;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
 
@@ -101,23 +149,37 @@ namespace HarshaBank.DataAccessLayer
 
         public bool UpdateCustomer(Customer customer)
         {
-            Customer existingCustomer = Customers.Find(item => item.CustomerID == customer.CustomerID);
 
-            if (existingCustomer != null)
+            try
             {
-                existingCustomer.CustomerCode = customer.CustomerCode;
-                existingCustomer.CustomerName = customer.CustomerName;
-                existingCustomer.Adress = customer.Adress;
-                existingCustomer.City = customer.City;
-                existingCustomer.Country = customer.Country;
-                existingCustomer.Landmark = customer.Landmark;
-                existingCustomer.Mobile = customer.Mobile;
 
-                return true;
+
+                Customer existingCustomer = Customers.Find(item => item.CustomerID == customer.CustomerID);
+
+                if (existingCustomer != null)
+                {
+                    existingCustomer.CustomerCode = customer.CustomerCode;
+                    existingCustomer.CustomerName = customer.CustomerName;
+                    existingCustomer.Adress = customer.Adress;
+                    existingCustomer.City = customer.City;
+                    existingCustomer.Country = customer.Country;
+                    existingCustomer.Landmark = customer.Landmark;
+                    existingCustomer.Mobile = customer.Mobile;
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch (CustomerException)
             {
-                return false;
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }
