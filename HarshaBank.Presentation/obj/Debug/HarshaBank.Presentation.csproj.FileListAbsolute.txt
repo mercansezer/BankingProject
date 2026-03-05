@@ -6,3 +6,22 @@ C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\
 C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe
 C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.pdb
 C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM 3- Banking Project - Getting Started\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe.config
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.exe.config
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.exe
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Presentation.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.BusinessLogicLayer.dll
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Configuration.dll
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Entities.dll
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Exceptions.dll
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.DataAccessLayer.dll
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.BusinessLogicLayer.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Configuration.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Entities.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.Exceptions.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\bin\Debug\HarshaBank.DataAccessLayer.pdb
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.csproj.AssemblyReference.cache
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe.config
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBa.FB9A60AD.Up2Date
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.exe
+C:\Users\MMrcn\Desktop\Software\C#\BÖLÜM-30-BANKINGPROJECT\HarshaBank.Presentation\HarshaBank.Presentation\obj\Debug\HarshaBank.Presentation.pdb

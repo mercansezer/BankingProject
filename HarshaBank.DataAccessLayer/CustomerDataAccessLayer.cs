@@ -16,15 +16,15 @@ namespace HarshaBank.DataAccessLayer
         /// <summary>
         ///  A list that stores customer objects.
         /// </summary>
-        private List<Customer> _customerList;
+        private static List<Customer> _customerList;
 
-        private List<Customer> Customers { get => _customerList; set => _customerList = value; }
+        private static List<Customer> Customers { get => _customerList; set => _customerList = value; }
 
         /// <summary>
         /// Initializes a new instance of the CustomerDataAccessLayer class and 
         /// creates a new list to store customer data.
         /// </summary>
-        public CustomerDataAccessLayer()
+        static CustomerDataAccessLayer()
         {
             _customerList = new List<Customer>();
         }
@@ -64,8 +64,6 @@ namespace HarshaBank.DataAccessLayer
         {
             try
             {
-
-
                 if (Customers.RemoveAll(item => item.CustomerID == customerId) > 0)
                 {
                     return true;
@@ -152,8 +150,6 @@ namespace HarshaBank.DataAccessLayer
 
             try
             {
-
-
                 Customer existingCustomer = Customers.Find(item => item.CustomerID == customer.CustomerID);
 
                 if (existingCustomer != null)

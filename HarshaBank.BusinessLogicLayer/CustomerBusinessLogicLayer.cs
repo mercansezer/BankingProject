@@ -12,10 +12,12 @@ using System.Collections.Generic;
 public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
 {
 
+    #region fields
     /// <summary>
     /// Data access layer for customer operations.
     /// </summary>
     private ICusomerDataAccessLayer _customerDataAccessLayer;
+    #endregion
 
     /// <summary>
     /// Initializes a new instance of the CustomerBusinessLogicLayer class.
@@ -26,6 +28,8 @@ public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
         _customerDataAccessLayer = new CustomerDataAccessLayer();
     }
 
+
+    #region Methods
     /// <summary>
     /// Retrieves a list of all customers.
     /// </summary>
@@ -56,7 +60,6 @@ public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
     /// <returns>Returns list of customers which matches with the conditions</returns>
     public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
     {
-
         try
         {
             return _customerDataAccessLayer.GetCustomersByCondition(predicate);
@@ -82,10 +85,6 @@ public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
     {
         try
         {
-
-            //If customer is null we want to throw an exception.
-            if (customer == null) throw new CustomerException("Customer should not be null");
-
             long maxCodeNumber = 0;
 
             List<Customer> allCustomers = _customerDataAccessLayer.GetCustomers();
@@ -131,7 +130,7 @@ public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
     {
         try
         {
-            if (customerId == null) throw new CustomerException("customerId is null");
+
             return _customerDataAccessLayer.DeleteCustomer(customerId);
 
         }
@@ -168,5 +167,5 @@ public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
         }
     }
 
-
+    #endregion
 }

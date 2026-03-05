@@ -82,17 +82,35 @@
             System.Console.WriteLine("1. Add Customer");
             System.Console.WriteLine("2. Delete Customer");
             System.Console.WriteLine("3. Update Customer");
-            System.Console.WriteLine("4. View Customer");
+            System.Console.WriteLine("4. Search Customers");
+            System.Console.WriteLine("5. View Customer");
             System.Console.WriteLine("0. Back To Main Menu");
-
 
             //accept customers menu choice
             System.Console.Write("Enter choice :");
 
             customerMenuChoice = System.Convert.ToInt32(System.Console.ReadLine());
+
+            switch (customerMenuChoice)
+            {
+                case 1:
+                    HarshaBank.Presentation.CustomerPresentation.AddCustomer();
+                    break;
+                case 2:
+                    HarshaBank.Presentation.CustomerPresentation.DeleteCustomer();
+                    break;
+                case 3:
+                    HarshaBank.Presentation.CustomerPresentation.UpdateCustomer();
+                    break;
+                case 4:
+                    HarshaBank.Presentation.CustomerPresentation.SearchCustomers();
+                    break;
+                case 5:
+                    HarshaBank.Presentation.CustomerPresentation.ViewCustomers();
+                    break;
+            }
+
         } while (customerMenuChoice != 0);
-
-
 
     }
 

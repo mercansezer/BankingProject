@@ -96,6 +96,14 @@ namespace HarshaBank.Entities
             get => _mobile;
             set
             {
+                if (value.Length == 10)
+                {
+                    _mobile = value;
+                }
+                else
+                {
+                    throw new CustomerException("It should be 10 digit");
+                }
             }
         }
 
