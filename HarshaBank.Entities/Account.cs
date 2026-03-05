@@ -15,7 +15,6 @@ namespace HarshaBank.Entities
         private long _accountNumber;
         private decimal _balance;
         private Guid _customerID;
-
         #endregion
 
 
@@ -90,10 +89,10 @@ namespace HarshaBank.Entities
         /// <param name="customerID">Identifier of the account owner.</param>
         public Account(Guid accountID, long accountNumber, decimal balance, Guid customerID)
         {
-            _accountID = accountID;
-            _accountNumber = accountNumber;
-            _balance = balance;
-            _customerID = customerID;
+            AccountID = accountID;
+            AccountNumber = accountNumber;
+            Balance = balance;
+            CustomerID = customerID;
 
         }
 
