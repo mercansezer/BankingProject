@@ -15,12 +15,12 @@ namespace HarshaBank.Entities.Contracts
         /// <summary>
         /// Account number from which the money is sent.
         /// </summary>
-        long FromAccountNumber { get; set; }
+        Guid FromAccountNumber { get; set; }
 
         /// <summary>
         /// Account number that receives the money.
         /// </summary>
-        long ToAccountNumber { get; set; }
+        Guid ToAccountNumber { get; set; }
 
         /// <summary>
         /// Amount of money transferred in the transaction.
