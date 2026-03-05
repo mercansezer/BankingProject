@@ -10,5 +10,11 @@
         /// This value can be incremented when creating new customers.
         /// </summary>
         public static long BaseCustomerCode { get; set; } = 10000;
+
+
+        /// <summary>
+        /// Represents the starting account number used as a base for generating new accounts.
+        /// </summary>
+        public static long BaseAccountCode { get; set; } = 1000;
     }
 }

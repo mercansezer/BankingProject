@@ -92,11 +92,11 @@ namespace HarshaBank.DataAccessLayer
         {
             try
             {
-                List<Customer> customerList = new List<Customer>();
+                List<Customer> clonedCustomerList = new List<Customer>();
 
-                Customers.ForEach(item => customerList.Add(item.Clone() as Customer));
+                Customers.ForEach(item => clonedCustomerList.Add(item.Clone() as Customer));
 
-                return customerList;
+                return clonedCustomerList;
             }
             catch (CustomerException)
             {
@@ -144,7 +144,6 @@ namespace HarshaBank.DataAccessLayer
         /// </summary>
         /// <param name="customer">The customer which we want to update</param>
         /// <returns>It returns true or false and it identifies if customer is updated or not.</returns>
-
         public bool UpdateCustomer(Customer customer)
         {
 

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountException.cs" />
     <Compile Include="CustomerException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

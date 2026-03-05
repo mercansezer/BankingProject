@@ -125,7 +125,8 @@
             System.Console.WriteLine("1. Add Account");
             System.Console.WriteLine("2. Delete Account");
             System.Console.WriteLine("3. Update Account");
-            System.Console.WriteLine("4. View Account");
+            System.Console.WriteLine("4. Search Accounts");
+            System.Console.WriteLine("5. View Account");
             System.Console.WriteLine("0. Back To Main Menu");
 
 
@@ -133,6 +134,25 @@
             System.Console.Write("Enter choice :");
 
             accountsMenuChoice = System.Convert.ToInt32(System.Console.ReadLine());
+
+            switch (accountsMenuChoice)
+            {
+                case 1:
+                    HarshaBank.Presentation.AccountPresentation.AddAccount();
+                    break;
+                case 2:
+                    HarshaBank.Presentation.AccountPresentation.DeleteAccount();
+                    break;
+                case 3:
+                    HarshaBank.Presentation.AccountPresentation.UpdateAccount();
+                    break;
+                case 4:
+                    HarshaBank.Presentation.AccountPresentation.SearchAccounts();
+                    break;
+                case 5:
+                    HarshaBank.Presentation.AccountPresentation.ViewAccounts();
+                    break;
+            }
         } while (accountsMenuChoice != 0);
 
     }
