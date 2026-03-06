@@ -317,7 +317,7 @@ namespace HarshaBank.Presentation
                 //LIST ALL THE ACCOUNTS BASED ON CUSTOMER DETAILS
                 foreach (Account account in accounts)
                 {
-                    Console.WriteLine("Account Number : " + account.AccountNumber);
+                    Console.WriteLine("\nAccount Number : " + account.AccountNumber);
                     Console.WriteLine("Account Balance : " + account.Balance);
 
                     Customer customer = allCustomers.FirstOrDefault(c => c.CustomerID == account.CustomerID);

@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System;
+
+class Program
 {
     static void Main()
     {
@@ -32,7 +34,7 @@
                 System.Console.WriteLine("\n:::Main menu:::");
                 System.Console.WriteLine("1. Customers");
                 System.Console.WriteLine("2. Accounts");
-                System.Console.WriteLine("3. Funds Transfer");
+                System.Console.WriteLine("3. Transaction");
                 System.Console.WriteLine("4. Funds Transfer Statement");
                 System.Console.WriteLine("5. Account Statement");
                 System.Console.WriteLine("0. Exit");
@@ -51,6 +53,7 @@
                         AccountsMenu();
                         break;
                     case 3:
+                        TransactionMenu();
                         break;
                     case 4:
                         break;
@@ -69,6 +72,7 @@
 
         System.Console.ReadKey();
     }
+
 
 
     static void CustomersMenu()
@@ -154,6 +158,52 @@
                     break;
             }
         } while (accountsMenuChoice != 0);
+
+
+
+    }
+    static void TransactionMenu()
+    {
+
+        int transactionMenuChoice = -1;
+
+        do
+        {
+            System.Console.WriteLine("\n:::Transaction Menu:::");
+            System.Console.WriteLine("1. Add Transaction");
+            System.Console.WriteLine("2. Delete Transaction");
+            System.Console.WriteLine("3. Update Transaction");
+            System.Console.WriteLine("4. Search Transaction");
+            System.Console.WriteLine("5. View Transactions");
+            System.Console.WriteLine("0. Back To Main Menu");
+
+            System.Console.WriteLine("Enter choice : ");
+
+            transactionMenuChoice = System.Convert.ToInt32(Console.ReadLine());
+
+            switch (transactionMenuChoice)
+            {
+                case 1:
+                    HarshaBank.Presentation.TransactionPresentation.AddTransaction();
+                    break;
+                case 2:
+                    HarshaBank.Presentation.TransactionPresentation.DeleteTransaction();
+                    break;
+                case 3:
+                    HarshaBank.Presentation.TransactionPresentation.UpdateTransaction();
+                    break;
+                case 4:
+                    HarshaBank.Presentation.TransactionPresentation.SearchTransaction();
+                    break;
+                case 5:
+                    HarshaBank.Presentation.TransactionPresentation.ViewTransactions();
+                    break;
+            }
+
+
+
+
+        } while (transactionMenuChoice != 0);
 
     }
 }
