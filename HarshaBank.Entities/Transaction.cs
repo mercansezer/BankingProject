@@ -55,8 +55,8 @@ namespace HarshaBank.Entities
             set
             {
                 // Para transferi 0 veya negatif olamaz
-                if (value <= 0)
-                    throw new TransactionException("Amount must be greater than zero.");
+                if (value < 0)
+                    throw new TransactionException("Amount cannot be negative.");
                 _amount = value;
             }
         }
@@ -70,12 +70,7 @@ namespace HarshaBank.Entities
         public string Remarks
         {
             get => _remarks;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                    throw new TransactionException("Remarks (Description) cannot be empty.");
-                _remarks = value;
-            }
+            set => _remarks = value;
         }
         #endregion
 
