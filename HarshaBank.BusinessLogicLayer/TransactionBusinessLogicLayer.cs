@@ -122,8 +122,6 @@ namespace HarshaBank.BusinessLogicLayer
                     throw new TransactionException("Source account or destination account number is invalid");
                 }
 
-
-
             }
             catch (TransactionException)
             {

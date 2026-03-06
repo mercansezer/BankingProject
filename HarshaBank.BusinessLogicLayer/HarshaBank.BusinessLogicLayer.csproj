@@ -44,8 +44,10 @@
     <Compile Include="AccountBusinessLogicLayer.cs" />
     <Compile Include="BLLContracts\IAccountBusinessLogicLayer.cs" />
     <Compile Include="BLLContracts\ICustomerBusinessLogicLayer.cs" />
+    <Compile Include="BLLContracts\ITransactionBusinessLogicLayer.cs" />
     <Compile Include="CustomerBusinessLogicLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionBusinessLogicLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HarshaBank.Configuration\HarshaBank.Configuration.csproj">
